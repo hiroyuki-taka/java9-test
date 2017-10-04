@@ -7,10 +7,10 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CollectionFactory {
+class CollectionFactory {
 
     @Test
-    public void mapTest() {
+    void mapTest() {
         // immutable mapが作れる
         Map<String, String> map = Map.of("a", "aaa", "b", "bbb");
 
@@ -20,7 +20,7 @@ public class CollectionFactory {
     }
 
     @Test
-    public void listTest() {
+    void listTest() {
         // immutable listが作れる
         List<String> list  = List.of("aaa", "bbb", "ccc");
 
