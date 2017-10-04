@@ -1,3 +1,5 @@
+package factory;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -9,6 +11,7 @@ public class CollectionFactory {
 
     @Test
     public void mapTest() {
+        // immutable mapが作れる
         Map<String, String> map = Map.of("a", "aaa", "b", "bbb");
 
         assertEquals(map.size(), 2);
@@ -18,6 +21,7 @@ public class CollectionFactory {
 
     @Test
     public void listTest() {
+        // immutable listが作れる
         List<String> list  = List.of("aaa", "bbb", "ccc");
 
         assertEquals(list.size(), 3);
